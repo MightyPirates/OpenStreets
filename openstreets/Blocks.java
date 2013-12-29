@@ -1,9 +1,9 @@
-package openstreet;
+package openstreets;
 
 
 import net.minecraft.block.material.Material;
 import net.minecraft.item.ItemSlab;
-import openstreet.block.BasicStreetBlock;
+import openstreets.block.BasicStreetBlock;
 
 public class Blocks {
 

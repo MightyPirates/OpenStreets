@@ -1,4 +1,4 @@
-package openstreet;
+package openstreets;
 
 
 import cpw.mods.fml.common.event.FMLInitializationEvent;
