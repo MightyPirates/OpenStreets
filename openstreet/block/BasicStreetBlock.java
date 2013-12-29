@@ -34,7 +34,7 @@ public class BasicStreetBlock extends BlockHalfSlab {
     public void registerIcons(IconRegister par1IconRegister) {
         iconList = new ArrayList<Icon>();
         for(int i = 0;i<multiBlockNames.length;i++){
-            iconList.add(par1IconRegister.registerIcon("os:"+getFullSlabName(i)))  ;
+            iconList.add(par1IconRegister.registerIcon("street."+ multiBlockNames[i]))  ;
         }
     }
 
