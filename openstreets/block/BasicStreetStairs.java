@@ -29,10 +29,6 @@ public class BasicStreetStairs extends BlockStairs {
     }
 
     @Override
-    public String getUnlocalizedName() {
-        return super.getUnlocalizedName();
-    }
-    @Override
     public int damageDropped(int metadata) {
         return metadata;
     }
@@ -41,15 +37,9 @@ public class BasicStreetStairs extends BlockStairs {
     public void getSubBlocks(int par1, CreativeTabs par2CreativeTabs, List par3List) {
         ArrayList<ItemStack> testList = new ArrayList<ItemStack>();
         modelBlock.getSubBlocks(par1, par2CreativeTabs, testList);
-
         for (int i = 0; i < testList.size(); i++) {
             ItemStack stack = new ItemStack(this, 1, i);
             par3List.add(stack);
-            if (modelBlock instanceof BasicStreetBlock)
-            {
-                System.out.println(BasicStreetBlock.getMultiBlockNames()[i] + ".stair");
-                LanguageRegistry.addName(stack, BasicStreetBlock.getMultiBlockNames()[i] + ".stair");
-            }
         }
     }
 }
